@@ -8,70 +8,74 @@
 </head>
 <body>
 
-    <h2>Invoice Information</h2>
+   <!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice Table</title>
+</head>
+<body>
     <table class="invoice-table">
         <tr>
-            <td colspan="4" class="invoice-header">Invoice Tabular data</td>
-        </tr>
-        <tr class="invoice-subheader">
-            <td colspan="2">Invoice #123456789</td>
-            <td colspan="2" style="text-align: right;">14 January 2025</td>
+          <td colspan="4" class="header">Invoice Tabular data</td>
         </tr>
         <tr class="invoice-info">
-            <td colspan="2">
-                <strong>Pay to:</strong><br>
-                Acme Billing Co.<br>
-                123 Main St.<br>
-                Cityville, NA 12345
-            </td>
-            <td colspan="2">
-                <strong>Customer:</strong><br>
-                John Smith<br>
-                321 Willow Way<br>
-                Southeast Northwestershire, MA 54321
-            </td>
+          <td colspan="2">Invoice #123456789</td>
+          <td colspan="2" class="date">14 January 2025</td>
         </tr>
-        <tr class="invoice-subheader">
-            <th>Name / Description</th>
-            <th>Qty.</th>
-            <th>@</th>
-            <th>Cost</th>
+        <tr class="billing-info">
+          <td colspan="2">
+            <b>Pay to:</b>
+            Acme Billing Co.<br>
+            123 Main St.<br>
+            Cityville, NA 12345
+          </td>
+          <td colspan="2">
+            <b>Customer:</b>
+            John Smith<br>
+            321 Willow Way<br>
+            Southeast Northwestershire, MA 54321
+          </td>
         </tr>
-        <tr>
-            <td>Paperclips</td>
-            <td>1000</td>
-            <td>0.01</td>
-            <td>10.00</td>
+        <tr class="column-header">
+          <td>Name / Description</td>
+          <td>Qty.</td>
+          <td>@</td>
+          <td class="cost">Cost</td>
         </tr>
-        <tr>
-            <td>Staples (box)</td>
-            <td>100</td>
-            <td>1.00</td>
-            <td>100.00</td>
+        <tr class="item-row">
+          <td>Paperclips</td>
+          <td>1000</td>
+          <td>0.01</td>
+          <td class="cost">10.00</td>
         </tr>
-        <tr>
-            <td>Bond Paper (box)</td>
-            <td>100</td>
-            <td>1.10</td>
-            <td>110.00</td>
+        <tr class="item-staples">
+          <td>Staples (box)</td>
+          <td>100</td>
+          <td>1.00</td>
+          <td class="cost">100.00</td>
         </tr>
-        <tr class="invoice-total">
-            <td colspan="3">Subtotal</td>
-            <td>220.00</td>
-        </tr>
-        <tr>
-            <td colspan="3">Tax</td>
-            <td>8%</td>
+        <tr class="item-row bond-paper">
+          <td>Bond Paper (box)</td>
+          <td>100</td>
+          <td>1.00</td>
+          <td class="cost">110.00</td>
         </tr>
         <tr>
-            <td colspan="3">Tax Amount</td>
-            <td>17.60</td>
+          <td colspan="3" class="subtotal">Subtotal</td>
+          <td class="cost">110.00</td>
         </tr>
-        <tr class="invoice-grand-total">
-            <td colspan="3">Grand Total</td>
-            <td>$ 237.60</td>
+        <tr class="tax-row">
+          <td colspan="2"><b>Tax</b></td>
+          <td>8%</td>
+          <td class="cost">8.80</td>
         </tr>
-    </table>
+        <tr class="grand-total">
+          <td colspan="3"><b>Grand Total</b></td>
+          <td class="grand-total-amount">$ 118.80</td>
+        </tr>
+      </table>
+</body>
+</html>
 
 
     <h2>Personal Information Form</h2>
